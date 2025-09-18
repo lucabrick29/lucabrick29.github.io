@@ -5,3 +5,8 @@ html {
 --secondary: #000000;
 --accent: rgb(12, 1, 1), 0, 0);
 }
+
+body {
+color: var(--text);
+backround: var(--background);
+}
