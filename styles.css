@@ -3,10 +3,10 @@ html {
 --background: #000000;
 --primary: #e5dddd;
 --secondary: #000000;
---accent: rgb(12, 1, 1), 0, 0);
+--accent: #000000;
 }
 
 body {
 color: var(--text);
-backround: var(--background);
+background: var(--background);
 }
