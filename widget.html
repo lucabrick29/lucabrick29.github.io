@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luca Mad Libs</title>
+</head>
+<body>
+    <h1>Luca Mad Libs Story</h1>
+
+    <div id="form-area">
+        <p>Enter a noun: <input type="text" id="noun"></p>
+        <p>Enter an adjective: <input type="text" id="adjective"></p>
+        <p>Enter a verb: <input type="text" id="verb"></p>
+        <button id="generate-button">Generate Story</button>
+    </div>
+
+    <h2>Generated story:</h2>
+    <p id="story-output"></p>
+
+    <script>
+        // JavaScript code for the Mad Libs game
+        document.getElementById("generate-button").addEventListener("click", generateStory);
+
+        function generateStory() {
+            // Get values from the input fields
+            const noun = document.getElementById("noun").value;
+            const adjective = document.getElementById("adjective").value;
+            const verb = document.getElementById("verb").value;
+
+            // The story template using the user's input
+            const story = `Once upon a time, a ${adjective} ${noun} decided to ${verb} all the way to the moon! It was a wild adventure.`;
+
+            // Display the generated story in the 'story-output' paragraph
+            document.getElementById("story-output").innerHTML = story;
+        }
+    </script>
+    <a href="index.html"><h3>Home Page</h3></a>
+
+</body>
+</html>
